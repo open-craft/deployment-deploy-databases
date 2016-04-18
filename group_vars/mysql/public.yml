@@ -1,0 +1,22 @@
+mysql_root_password: "{{ MYSQL_ROOT_PASSWORD }}"
+mysql_root_password_update: true
+
+mysql_packages:
+  - mysql-server-5.5
+  - mysql-client-5.5
+
+FORWARD_MAIL_MYDOMAIN: "{{ MYSQL_SERVER_DOMAIN }}"
+UNATTENED_UPGRADES_ERRORS_RELAY_TO: "{{ MYSQL_SERVER_DOMAIN }}"
+
+SANITY_CHECK_DISK_SPACE:
+  - mount: /
+    treshold_mb: 5000
+  - mount: /var/lib/mysql
+    treshold_mb: 5000
+
+SANITY_CHECK_LIVE_PORTS:
+  - host: localhost
+    port: 3306
+    description: "Can't connect to mysql"
+
+SANITY_CHECK_COMMANDS: []
