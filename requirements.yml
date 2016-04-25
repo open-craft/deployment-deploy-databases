@@ -1,0 +1,48 @@
+- name: geerlingguy.mysql
+  src: https://github.com/geerlingguy/ansible-role-mysql
+  version: 9b3c7c8a0a90cb14f4346b8f69fec94b7314e3c4
+
+- name: geerlingguy.security
+  version: 'origin/jbzdak/notify-mail'
+  src: https://github.com/open-craft/ansible-role-security
+
+# This is downloaded from git instead of galaxy as we want to pin to specific version
+# And this role is not versioned in galaxy
+- name: kamaln7.swapfile
+  src: https://github.com/kamaln7/ansible-swapfile
+  version: 8eb0e18d90a7f25b6658fbf56bcba01b84a664fc
+
+
+# Our fork of pmbauer tarsnap.
+# Can be cleared when this is closed: https://github.com/pmbauer/ansible-tarsnap/pull/3
+- src: https://github.com/open-craft/ansible-tarsnap
+  name: pmbauer.tarsnap
+  version: d96b1e69ae6b930e0841d7b025a3070c408a23f4
+
+- name: backup-to-tarsnap
+  src: https://github.com/open-craft/ansible-backup-to-tarsnap
+  version: 'origin/jbzdak/tasrsnap'
+
+- name: mysql-server
+  src: https://github.com/open-craft/ansible-mysql-server
+  version: 'origin/jbzdak/mysql-server'
+
+- name: common-server
+  src: https://github.com/open-craft/ansible-common-server
+  version: 'origin/jbzdak/common-server'
+
+- name: configure-apt
+  src: https://github.com/open-craft/ansible-configure-apt
+  version: 'origin/jbzdak/configure-apt'
+
+- name: sanity-checker
+  src: https://github.com/open-craft/ansible-sanity-checker/
+  version: 'origin/jbzdak/sanity-checker'
+
+- name: forward-server-mail
+  src: https://github.com/open-craft/ansible-forward-server-mail
+  version: 'origin/jbzdak/forward-mail'
+
+- name: mysql
+  src: https://github.com/open-craft/ansible-mysql
+  version: 'origin/jbzdak/mysql'
