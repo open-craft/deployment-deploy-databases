@@ -1,3 +1,5 @@
+mysql_root_password: "{{ MYSQL_ROOT_PASSWORD }}"
+
 mysql_databases:
   - name: "{{ MYSQL_DALITE_DATABASE }}"
     encoding: utf8mb4
@@ -8,3 +10,7 @@ mysql_users:
     host: "%"
     password: "{{ MYSQL_DALITE_PASSWORD }}"
     priv: "{{ MYSQL_DALITE_DATABASE }}.*:ALL"
+
+TARSNAP_KEY: "{{ MYSQL_TARSNAP_KEY }}"
+SANITY_CHECK_SNITCH: "{{ MYSQL_SANITY_CHECK_SNITCH }}"
+TARSNAP_BACKUP_SNITCH: "{{ MYSQL_TARSNAP_BACKUP_SNITCH }}"
