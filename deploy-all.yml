@@ -2,7 +2,16 @@
   hosts: mysql
   become: true
   roles:
-    - name: common-server
+    - common-server
     - mysql
     - geerlingguy.mysql
+    - name: forward-server-mail
+
+- name: Set up PosgreSQL server
+  hosts: postgres
+  become: true
+  roles:
+    - common-server
+    - postgres
+    - ANXS.postgresql
     - name: forward-server-mail

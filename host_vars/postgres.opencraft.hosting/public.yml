@@ -1,0 +1,18 @@
+postgresql_databases:
+  - name: "{{ POSTGRES_IM_DATABASE }}"
+    owner: "{{ POSTGRES_IM_USER }}"
+
+postgresql_users:
+  - name: "{{ POSTGRES_IM_USER }}"
+    pass: "{{ POSTGRES_IM_PASSWORD }}"
+    encrypted: no
+
+postgresql_user_privileges:
+  - name: "{{ POSTGRES_IM_USER }}"
+    db: "{{ POSTGRES_IM_DATABASE }}"
+    priv: ALL
+    role_attr_flags: CREATEDB
+
+TARSNAP_KEY: "{{ POSTGRES_TARSNAP_KEY }}"
+SANITY_CHECK_SNITCH: "{{ POSTGRES_SANITY_CHECK_SNITCH }}"
+TARSNAP_BACKUP_SNITCH: "{{ POSTGRES_TARSNAP_BACKUP_SNITCH }}"
