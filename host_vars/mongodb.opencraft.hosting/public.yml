@@ -1,0 +1,11 @@
+mongodb_user_admin_name: "{{ MONGODB_USER_ADMIN_NAME }}"
+mongodb_user_admin_password: "{{ MONGODB_USER_ADMIN_PASSWORD }}"
+
+mongodb_root_admin_name: "{{ MONGODB_ROOT_ADMIN_NAME }}"
+mongodb_root_admin_password: "{{ MONGODB_ROOT_ADMIN_PASSWORD }}"
+
+mongodb_keyfile_content: "{{ MONGODB_KEYFILE_CONTENT }}"
+
+TARSNAP_KEY: "{{ MONGODB_TARSNAP_KEY }}"
+SANITY_CHECK_SNITCH: "{{ MONGODB_SANITY_CHECK_SNITCH }}"
+TARSNAP_BACKUP_SNITCH: "{{ MONGODB_TARSNAP_BACKUP_SNITCH }}"

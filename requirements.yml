@@ -50,3 +50,11 @@
 - name: ANXS.postgresql
   src: https://github.com/ANXS/postgresql
   version: v1.4.0
+
+- name: mongodb
+  src: https://github.com/open-craft/ansible-mongodb
+  version: 'origin/smarnach/mongodb'
+
+- name: greendayonfire.mongodb
+  src: https://github.com/UnderGreen/ansible-role-mongodb
+  version: v1.4.11

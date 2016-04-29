@@ -5,7 +5,7 @@
     - common-server
     - mysql
     - geerlingguy.mysql
-    - name: forward-server-mail
+    - forward-server-mail
 
 - name: Set up PosgreSQL server
   hosts: postgres
@@ -14,4 +14,13 @@
     - common-server
     - postgres
     - ANXS.postgresql
-    - name: forward-server-mail
+    - forward-server-mail
+
+- name: Set up MongoDB server
+  hosts: mongodb
+  become: true
+  roles:
+    - common-server
+    - mongodb
+    - greendayonfire.mongodb
+    - forward-server-mail
