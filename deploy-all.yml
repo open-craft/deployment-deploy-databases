@@ -1,0 +1,11 @@
+- name: Set up Mysql server
+  hosts: mysql
+  become: true
+  roles:
+    - name: common-server
+      TASNAP_KEY: "{{ MYSQL_TARSNAP_KEY }}"
+      SANITY_CHECK_SNITCH: "{{ MYSQL_SANITY_CHECK_SNITCH }}"
+      TARSNAP_BACKUP_SNITCH: "{{ MYSQL_TARSNAP_BACKUP_SNITCH }}"
+    - mysql
+    - geerlingguy.mysql
+    - name: forward-server-mail

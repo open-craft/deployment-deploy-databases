@@ -1,0 +1,5 @@
+tarsnap_version: 1.0.37
+tarsnap_cache: /var/tarsnap/cache
+tarsnap_cron_hour: "*"
+
+FORWARD_MAIL_RELAY_MAIL_TO: 'ops@example.com'
