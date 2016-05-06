@@ -6,8 +6,8 @@
 
 # Our fork of security, can be synced when this is merged: https://github.com/geerlingguy/ansible-role-security/pull/16
 - name: geerlingguy.security
-  version: '0b495a931c3d9c73732e14811c74bc70635d6c69'
   src: https://github.com/open-craft/ansible-role-security
+  version: origin/jbzdak/notify-mail
 
 - name: kamaln7.swapfile
   src: https://github.com/kamaln7/ansible-swapfile
@@ -15,8 +15,8 @@
 
 # Our fork of pmbauer tarsnap.
 # Can be cleared when this is closed: https://github.com/pmbauer/ansible-tarsnap/pull/3
-- src: https://github.com/open-craft/ansible-tarsnap
-  name: pmbauer.tarsnap
+- name: pmbauer.tarsnap
+  src: https://github.com/open-craft/ansible-tarsnap
   version: d96b1e69ae6b930e0841d7b025a3070c408a23f4
 
 - name: backup-to-tarsnap
@@ -42,3 +42,19 @@
 - name: mysql
   src: https://github.com/open-craft/ansible-mysql
   version: 'd215a7e75bb51b5fe9f8da16cde5c72ef11a5f8f'
+
+- name: postgres
+  src: https://github.com/open-craft/ansible-postgres
+  version: 'origin/smarnach/postgres'
+
+- name: ANXS.postgresql
+  src: https://github.com/ANXS/postgresql
+  version: dda12bcbfa01697f16332adbc1432ea7fe6dfb5f
+
+- name: mongodb
+  src: https://github.com/open-craft/ansible-mongodb
+  version: 'origin/smarnach/mongodb'
+
+- name: greendayonfire.mongodb
+  src: https://github.com/UnderGreen/ansible-role-mongodb
+  version: 45da87de3d90a764d4689115e86461c6151bcca3

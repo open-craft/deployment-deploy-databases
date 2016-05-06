@@ -1,11 +1,26 @@
-- name: Set up Mysql server
+- name: Set up Mysql servers
   hosts: mysql
   become: true
   roles:
-    - name: common-server
-      TASNAP_KEY: "{{ MYSQL_TARSNAP_KEY }}"
-      SANITY_CHECK_SNITCH: "{{ MYSQL_SANITY_CHECK_SNITCH }}"
-      TARSNAP_BACKUP_SNITCH: "{{ MYSQL_TARSNAP_BACKUP_SNITCH }}"
+    - common-server
     - mysql
     - geerlingguy.mysql
-    - name: forward-server-mail
+    - forward-server-mail
+
+- name: Set up PosgreSQL server
+  hosts: postgres
+  become: true
+  roles:
+    - common-server
+    - postgres
+    - ANXS.postgresql
+    - forward-server-mail
+
+- name: Set up MongoDB server
+  hosts: mongodb
+  become: true
+  roles:
+    - common-server
+    - mongodb
+    - greendayonfire.mongodb
+    - forward-server-mail

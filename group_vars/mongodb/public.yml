@@ -1,0 +1,23 @@
+mongodb_conf_auth: true
+mongodb_conf_bind_ip: 0.0.0.0
+mongodb_conf_dbpath: '/var/lib/mongodb/db'
+mongodb_conf_logpath: '/var/lib/mongodb/log/{{ mongodb_daemon_name }}.log'
+mongodb_pymongo_from_pip: true
+
+MONGODB_SERVER_DOMAIN: "{{ inventory_hostname }}"
+
+MONGODB_SERVER_BACKUP_DIR: '/var/lib/mongodb/backup'
+TARSNAP_BACKUP_PRE_SCRIPT: "/usr/local/sbin/backup-pre.sh"
+TARSNAP_BACKUP_POST_SCRIPT: "/usr/local/sbin/backup-post.sh"
+TARSNAP_BACKUP_FOLDERS: "{{ MONGODB_SERVER_BACKUP_DIR }}"
+TARSNAP_ARCHIVE_NAME: "{{ MONGODB_SERVER_DOMAIN }}"
+
+FORWARD_MAIL_MYDOMAIN: "{{ MONGODB_SERVER_DOMAIN }}"
+UNATTENED_UPGRADES_ERRORS_RELAY_TO: "{{ MONGODB_SERVER_DOMAIN }}"
+
+SANITY_CHECK_LIVE_PORTS:
+  - host: localhost
+    port: 27017
+    message: "Can't connect to MongoDB"
+
+SANITY_CHECK_COMMANDS: []
