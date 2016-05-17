@@ -53,7 +53,7 @@
 
 - name: mongodb
   src: https://github.com/open-craft/ansible-mongodb
-  version: 'origin/smarnach/mongodb'
+  version: 'cc97767456cc66fe3270fb8685645436878fb890'
 
 - name: greendayonfire.mongodb
   src: https://github.com/UnderGreen/ansible-role-mongodb
