@@ -41,7 +41,7 @@
 
 - name: mysql
   src: https://github.com/open-craft/ansible-mysql
-  version: 'd215a7e75bb51b5fe9f8da16cde5c72ef11a5f8f'
+  version: 'dadcae0934f7c4766a62b4794151875da0100fc8'
 
 - name: postgres
   src: https://github.com/open-craft/ansible-postgres
