@@ -1,4 +1,4 @@
-- name: Set up Mysql servers
+- name: Set up MySQL servers
   hosts: mysql
   become: true
   roles:
@@ -7,7 +7,7 @@
     - geerlingguy.mysql
     - forward-server-mail
 
-- name: Set up PosgreSQL server
+- name: Set up PostgreSQL servers
   hosts: postgres
   become: true
   roles:
@@ -16,7 +16,7 @@
     - ANXS.postgresql
     - forward-server-mail
 
-- name: Set up MongoDB server
+- name: Set up MongoDB servers
   hosts: mongodb
   become: true
   roles:

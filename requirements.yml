@@ -2,7 +2,7 @@
 
 - name: geerlingguy.mysql
   src: https://github.com/geerlingguy/ansible-role-mysql
-  version: 9b3c7c8a0a90cb14f4346b8f69fec94b7314e3c4
+  version: c71ded56d87c8df606210b59f045ed4c3f1f98ff
 
 # Our fork of security, can be synced when this is merged: https://github.com/geerlingguy/ansible-role-security/pull/16
 - name: geerlingguy.security
@@ -21,7 +21,7 @@
 
 - name: backup-to-tarsnap
   src: https://github.com/open-craft/ansible-backup-to-tarsnap
-  version: '3d2f6f982ab02112ede9e39e1553b106e5079b87'
+  version: '45ac5b4bfd9fe4003c126c3284bb0a91ac48b86a'
 
 - name: common-server
   src: https://github.com/open-craft/ansible-common-server
@@ -41,7 +41,7 @@
 
 - name: mysql
   src: https://github.com/open-craft/ansible-mysql
-  version: 'd215a7e75bb51b5fe9f8da16cde5c72ef11a5f8f'
+  version: 'dadcae0934f7c4766a62b4794151875da0100fc8'
 
 - name: postgres
   src: https://github.com/open-craft/ansible-postgres
