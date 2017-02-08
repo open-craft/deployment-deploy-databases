@@ -21,31 +21,31 @@
 
 - name: backup-to-tarsnap
   src: https://github.com/open-craft/ansible-backup-to-tarsnap
-  version: '45ac5b4bfd9fe4003c126c3284bb0a91ac48b86a'
+  version: origin/master
 
 - name: common-server
   src: https://github.com/open-craft/ansible-common-server
-  version: '8423f76a12f5ade7bd008efffedfee12f9506259'
+  version: origin/master
 
 - name: configure-apt
   src: https://github.com/open-craft/ansible-configure-apt
-  version: '97877cadc7927dab043bff70a1e621af3b277b5f'
+  version: origin/master
 
 - name: sanity-checker
   src: https://github.com/open-craft/ansible-sanity-checker/
-  version: '5387389cbb640e125595fd57e5ab787504a9537c'
+  version: origin/master
 
 - name: forward-server-mail
   src: https://github.com/open-craft/ansible-forward-server-mail
-  version: 'c252ef531802fecace6c0173e647e0a0f13df256'
+  version: origin/master
 
 - name: mysql
   src: https://github.com/open-craft/ansible-mysql
-  version: 'dadcae0934f7c4766a62b4794151875da0100fc8'
+  version: origin/master
 
 - name: postgres
   src: https://github.com/open-craft/ansible-postgres
-  version: 'origin/smarnach/postgres'
+  version: origin/master
 
 - name: ANXS.postgresql
   src: https://github.com/ANXS/postgresql
@@ -53,8 +53,8 @@
 
 - name: mongodb
   src: https://github.com/open-craft/ansible-mongodb
-  version: 'cc97767456cc66fe3270fb8685645436878fb890'
+  version: origin/master
 
 - name: greendayonfire.mongodb
   src: https://github.com/UnderGreen/ansible-role-mongodb
-  version: 45da87de3d90a764d4689115e86461c6151bcca3
+  version: 084f09a78960f1f4b4b17b24606aca54acd63308
