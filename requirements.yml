@@ -57,4 +57,4 @@
 
 - name: greendayonfire.mongodb
   src: https://github.com/UnderGreen/ansible-role-mongodb
-  version: 2dec49074d5e5904ac655d425cfc0267a9613a26
+  version: 1ba531c5c68a4cf684410c50e7286ffd7742b848
